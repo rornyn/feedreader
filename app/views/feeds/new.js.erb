@@ -1,0 +1,3 @@
+$(".modal-content .modal-header .modal-title").html(" Enter Feed url");
+$(".modal-content .main-containt").html("<%= escape_javascript(render partial: 'form', locals: { feed: @feed } ) %>");
+$('#shared_popup').modal('show');

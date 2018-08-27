@@ -1,0 +1,37 @@
+// Place all the styles related to the feeds controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.table-title {
+  padding-bottom: 10px;
+  margin: 0 0 10px;
+}
+.table-title h2 {
+  margin: 6px 0 0;
+  font-size: 22px;
+}
+.table-title .add-new {
+  float: right;
+  height: 30px;
+  font-weight: bold;
+  font-size: 12px;
+  text-shadow: none;
+  min-width: 100px;
+  border-radius: 50px;
+  line-height: 13px;
+}
+.table-title .add-new i {
+margin-right: 4px;
+}
+
+.table-wrapper {
+  width: 1163px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.error-field{
+    color: red;
+}

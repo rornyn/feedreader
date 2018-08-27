@@ -1,0 +1,6 @@
+<% if @update %>
+$('#shared_popup').modal('hide');
+$("#row_<%= @feed.id%>").replaceWith("<%= escape_javascript(render partial: 'feed', locals: { feed: @feed } ) %>");
+<% else %>
+  $(".modal-content .main-containt").html("<%= escape_javascript(render partial: 'form', locals: { feed: @feed } ) %>");
+<% end %>

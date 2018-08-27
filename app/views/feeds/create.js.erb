@@ -1,0 +1,6 @@
+<% if @feed.save %>
+$('#shared_popup').modal('hide');
+$("tbody").prepend("<%= escape_javascript(render partial: 'feed', locals: { feed: @feed } ) %>");
+<% else %>
+  $(".modal-content .main-containt").html("<%= escape_javascript(render partial: 'form', locals: { feed: @feed } ) %>");
+<% end %>

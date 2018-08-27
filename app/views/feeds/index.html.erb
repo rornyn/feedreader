@@ -1,0 +1,25 @@
+<div class="table-wrapper">
+  <div class="table-wrapper">
+    <div class="table-title">
+      <div class="row">
+          <div class="col-sm-8"><h2>Employee <b>Details</b></h2></div>
+          <div class="col-sm-4">
+            <%= link_to new_feed_path, class: "btn btn-info add-new", remote: true do %>
+              Add Feed <i class="fa fa-plus"></i>
+            <% end %>
+          </div>
+      </div>
+    </div>
+    <table class="table table-hover" id: "feeds">
+      <thead>
+        <tr>
+          <th>Url</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%= render partial: 'feed', collection: @feeds, as: :feed %>
+      </tbody>
+    </table>
+  </div>
+</div>
