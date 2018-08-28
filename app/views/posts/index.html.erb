@@ -1,0 +1,21 @@
+<div class="table-wrapper">
+  <div class="table-wrapper">
+    <div class="table-title">
+      <div class="row">
+          <div class="col-sm-8"><h2> Posts </h2></div>
+      </div>
+    </div>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Publish date </th>
+          <th>Url</th>
+          <th> Category </th>
+        </tr>
+      </thead>
+      <tbody>
+        <%= render partial: 'post', collection: @posts, as: :post %>
+      </tbody>
+    </table>
+  </div>
+</div>

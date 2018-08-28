@@ -1,0 +1,9 @@
+<tr id="row_<%= post.id%>">
+  <td> <%= post.publish_date %> </td>
+  <td>
+    <%= link_to post.title, post.url, target: "_blank" %>
+  </td>
+  <td>
+    <%= post.feed_title %>
+  </td>
+</tr>
