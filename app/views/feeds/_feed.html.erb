@@ -1,5 +1,6 @@
 <tr id="row_<%= feed.id%>">
   <td> <%= feed.url %> </td>
+  <td> <%= feed.title || "NA" %>
   <td>
     <%= link_to edit_feed_path(feed), title: "Edit", remote: true do %>
       <i class="fa fa-pencil-square-o"></i>
